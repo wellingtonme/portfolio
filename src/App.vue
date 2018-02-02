@@ -1,15 +1,13 @@
 <template>
-  <v-app>
-    <v-toolbar />
-  </v-app>
+  <Main />
 </template>
 
 <script>
-
+import Main from './components/main/Main'
 export default {
   name: 'App',
   components: {
-    
+    Main
   }
 }
 </script>
