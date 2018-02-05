@@ -1,3 +1,13 @@
 {
-	"title": "Título"
+	"title": "Título",
+	"toolbar": {
+		"title": "Conheça Wellington!",
+		"links": {
+			"home": "Home",
+			"about": "Sobre",
+			"skills": "Expertises",
+			"projects": "Projetos",
+			"contact": "Contato"
+		}
+	}
 }

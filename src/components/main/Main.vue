@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-toolbar 
+    <!-- <v-toolbar 
       class="elevation-0" 
       :class="{'toolbar--is-on-top': isOnTop}"
       v-scroll="onScroll">
@@ -23,11 +23,12 @@
           class="btn--custom"
           flat>Link Three</v-btn>
       </v-toolbar-items>
-    </v-toolbar>
+    </v-toolbar> -->
+    <toolbar/>
     <v-content>
       <section class="section">
         <v-parallax 
-        height="515">
+        height="1000">
         <!-- <h1 class="white--text mb-2 display-1 text-xs-center">Parallax Template</h1> -->
         </v-parallax>
       </section>
@@ -39,96 +40,24 @@
 </template>
 
 <script>
+import Toolbar from '../toolbar/Toolbar.vue'
 
 export default {
 	name: 'Main',
 	components: {
+		Toolbar
 	},
 	// mixins: [FullPage.fullPageMixin],
 	data: () => ({
-		isOnTop: true,
 		options: {
 			sectionTag: 'section',
 			dotNavEnabled: false
 		},
-		currentPageIndex: 0
-	}),
-	computed: {
-		
-	},
-	methods: {
-		onScroll (e) {
-			let topOffset = window.pageYOffset || document.documentElement.scrollTop
-			this.isOnTop = topOffset > 0
-		},
-		isMenuItemActive (index) {
-			return index === this.currentPageIndex
-		},
-		changeIndex (index) {
-			// eslint-disable-next-line
-			console.log(index)
-			this.currentPageIndex = index
-		}
-	}
+	})
 }
 </script>
 
 <style lang="stylus" scoped>
-.toolbar
-	z-index 1
-
-.toolbar--is-on-top
-	background-color transparent
-
-// .item--active
-// 	border-bottom 2px solid #03A9F4
-
-.btn--custom
-	border-bottom 2px solid transparent 
-	transition 0.5s
-	&::before
-	&::after
-		width 100%
-		height 100%
-		content ''
-		-webkit-transform: scale(0)
-		transition: 0.5s
-	&::before
-		border-bottom: 3px solid #FFF
-		border-left: 0
-		-webkit-transform-origin: 0% 100%
-	&::after
-		border-top: 0
-		border-right: 0
-		-webkit-transform-origin: 50% 50%
-	&:hover
-		&::after
-		&::before
-			-webkit-transform: scale(1)
-	// transition color 0.25s
-	// border-bottom 2px solid transparent !important
-	// transition: border-color 1s ease;
-	// &::before
-	// &::after
-	// 	width 0
-	// 	height 0
-	// &::before
-	// 	top 0
-	// 	right 0
-	// &::after
-	// 	bottom: 0
-	// 	left 0
-	// &:hover
-	// 	color #03A9F4
-	// 	&::before
-	// 	&::after
-	// 		// width 100%
-	// 	&::after
-	// 		border-color #03A9F4
-			// border-left-color #03A9F4
-			// transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s
-
-
 .parallax
 	position absolute
 	top 0

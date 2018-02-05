@@ -1,0 +1,41 @@
+.ntoolbar
+	position: fixed
+	top: 0
+	height: 90px
+	width: 100%
+	line-height: 70px
+	z-index: 3
+	-webkit-transition: all .5s
+	transition: all .5s
+	box-shadow: 0 1px 5px rgba(0,0,0,0.0);
+	background-color: transparent
+	&--title
+		display: inline-block
+		font-size: 20px
+		-webkit-transition: all .5s
+		transition: all .5s
+		&--scrolled
+			font-size: 16px !important
+	&--actions
+		list-style: none
+		width: 100%
+		& > li
+			list-style: none
+			display: inline-block
+			padding-left: 3%
+			font-size: 16px
+			font-weight: 500
+	&--title-container
+		float: left
+		padding-left: 20px
+	&--actions-container
+		float: right
+		padding-right: 20px
+	&--scrolled
+		height 58px
+		line-height: 58px
+		box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12) !important
+		background-color: #212121
+			
+
+
