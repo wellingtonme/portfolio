@@ -9,14 +9,10 @@
           class="ntoolbar--title"
           :class="{'ntoolbar--title--scrolled': isScrolled}">{{ $t('toolbar.title') }}</h1>
       </div>
-      <div class="ntoolbar--actions-container">
-        <ul class="ntoolbar--actions">
-          <li>{{ $t('toolbar.links.home') }}</li>
-          <li>{{ $t('toolbar.links.about') }}</li>
-          <li>{{ $t('toolbar.links.skills') }}</li>
-          <li>{{ $t('toolbar.links.projects') }}</li>
-          <li>{{ $t('toolbar.links.contact') }}</li>
-        </ul>
+      <div 
+        class="ntoolbar--actions-container" 
+        :class="{'ntoolbar--actions-container--scrolled': isScrolled}">
+        <action-list />
       </div>
     </div>
   </nav>
@@ -25,8 +21,13 @@
 <script>
 import Colorable from 'vuetify/es5/mixins/colorable.js'
 import Themeable from 'vuetify/es5/mixins/themeable.js'
+import ActionList from './ActionList.vue'
+
 export default {
-	name: 'Toolbar',
+  name: 'Toolbar',
+  components: {
+    ActionList
+  },
 	mixins: [Colorable, Themeable],
 	data: () => ({
 		offsetTop: 0
