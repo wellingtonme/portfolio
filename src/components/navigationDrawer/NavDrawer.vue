@@ -38,6 +38,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="stylus" scoped>
+.navigation-drawer
+	position: fixed
 </style>

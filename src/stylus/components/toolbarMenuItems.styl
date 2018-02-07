@@ -1,0 +1,20 @@
+@import '../tools/variables.styl'
+
+.menu-link
+	display: inline-block
+	text-decoration: none
+	color: #fff !important
+
+.menu-link::after
+	content: ''
+	display: block
+	width: 0
+	height: 4px
+	background: $primary
+	transition: width .3s
+	padding: 0
+	border-radius: 25%
+	margin-top: -10%
+
+.menu-link:hover::after
+	width: 100%

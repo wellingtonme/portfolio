@@ -4,7 +4,11 @@
       v-for="link in links" 
       :key="link.id">
 
-      {{ $t(link.title) }}
+      <a 
+        class="menu-link" 
+        href="#"> 
+        {{ $t(link.title) }} 
+      </a>
 
     </li>
   </ul>
