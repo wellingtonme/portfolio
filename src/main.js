@@ -9,10 +9,12 @@ import Frameworks from './frameworks'
 Vue.config.productionTip = false
 
 const i18n = Frameworks.i18n
+const store = Frameworks.Store
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   components: { App },
   i18n,
+  store,
   template: '<App/>'
 })

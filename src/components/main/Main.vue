@@ -1,30 +1,9 @@
 <template>
   <v-app dark>
-    <!-- <v-toolbar 
-      class="elevation-0" 
-      :class="{'toolbar--is-on-top': isOnTop}"
-      v-scroll="onScroll">
-      <v-spacer/>
-      <v-toolbar-items 
-        class="hidden-sm-and-down" 
-        id="menu">
-        <v-btn 
-          :class="{'item--active':isMenuItemActive(0)}"
-          flat
-          class="btn--custom"
-          @click.stop="changeIndex(0)">Link One</v-btn>
-        <v-btn
-          :class="{'item--active':isMenuItemActive(1)}"
-          flat
-          class="btn--custom"
-          @click.stop="changeIndex(1)">Link Two</v-btn>
-        <v-btn 
-          :class="{'item--active':isMenuItemActive(2)}"
-          class="btn--custom"
-          flat>Link Three</v-btn>
-      </v-toolbar-items>
-    </v-toolbar> -->
-    <toolbar/>
+    
+    <toolbar @openNavDrawer="openNavDrawer"/>
+    <nav-drawer ref="navDrawer" />
+
     <v-content>
       <section class="section">
         <v-parallax 
@@ -41,19 +20,26 @@
 
 <script>
 import Toolbar from '../toolbar/Toolbar.vue'
+import NavDrawer from '../navigationDrawer/NavDrawer.vue'
 
 export default {
 	name: 'Main',
 	components: {
-		Toolbar
+    Toolbar,
+    NavDrawer
 	},
 	// mixins: [FullPage.fullPageMixin],
 	data: () => ({
 		options: {
 			sectionTag: 'section',
-			dotNavEnabled: false
-		},
-	})
+      dotNavEnabled: false
+    }    
+  }),
+  methods: {
+    openNavDrawer () {
+      this.$refs.navDrawer.openNavDrawer()
+    }
+  }
 }
 </script>
 
