@@ -9,5 +9,16 @@
 			"projects": "Projetos",
 			"contact": "Contato"
 		}
+	},
+	"profile": {
+		"greeting": "Olá pessoa!",
+		"presentation": {
+			"prefix": "Me chamo",
+			"name": "Wellington",
+			"present": "@:profile.presentation.prefix @:profile.presentation.name"
+		},
+		"role": "Fullstack Developer",
+		"description": "Sou um Web Developer apreciador de VueJS e Node, apaixonado em resolver problemas, dono de 4 cats 🐾 e eu gosto de assistir videos de gatinhos vestido dançando.",
+		"quote": "Trabalhando para fazer a internet um lugar melhor!"
 	}
 }
