@@ -6,7 +6,6 @@
     item-value="iso"
     chips
     max-height="auto"
-    autocomplete
     v-model="locale"
     :class="{'hide-details': hideDetails, 'show-lable': showLable}"
     :style="{ width: `${this.width}px` }"

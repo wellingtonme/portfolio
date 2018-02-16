@@ -10,13 +10,14 @@
         <language-selector 
           show-lable 
           :hide-details="true"
-          :width="300"/>
+          :width="200"/>
       </v-card-text>
 
       <v-card-actions>
         <v-btn
           flat
-          @click.stop="close" >
+          @click.stop="close" 
+          color="primary">
 					
           {{ $t('defaults.close') }} 
 				
