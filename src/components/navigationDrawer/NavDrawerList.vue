@@ -18,8 +18,13 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import LanguageSelector from '../languageSelector/LanguageSelector.vue'
+
 export default {
 	name: 'NavDrawerList',
+  components: {
+    LanguageSelector
+  },
 	computed: {
 		...mapGetters({
 			links: 'menuOptions'

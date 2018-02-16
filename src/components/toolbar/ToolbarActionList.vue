@@ -11,14 +11,21 @@
       </a>
 
     </li>
+    <li>
+      <language-selector />
+    </li>
   </ul>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
+import LanguageSelector from '../languageSelector/LanguageSelector.vue'
 
 export default {
   name: 'ToolbarActionList',
+  components: {
+    LanguageSelector
+  },
   computed: {
     ...mapGetters({
       links: 'menuOptions'

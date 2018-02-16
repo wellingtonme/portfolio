@@ -11,14 +11,18 @@
 		}
 	},
 	"profile": {
-		"greeting": "Olá pessoa!",
+		"greeting": "OI",
 		"presentation": {
-			"prefix": "Me chamo",
-			"name": "Wellington",
+			"prefix": "Eu sou",
+			"name": "<s>Goku</s> Wellington",
 			"present": "@:profile.presentation.prefix @:profile.presentation.name"
 		},
 		"role": "Fullstack Developer",
 		"description": "Sou um Web Developer apreciador de VueJS e Node, apaixonado em resolver problemas, dono de 4 cats 🐾 e eu gosto de assistir videos de gatinhos vestido dançando.",
 		"quote": "Trabalhando para fazer a internet um lugar melhor!"
+	},
+	"languages": {
+		"ptBr": "Português",
+		"en": "Inglês"
 	}
 }
