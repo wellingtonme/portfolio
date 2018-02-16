@@ -1,5 +1,9 @@
 {
 	"title": "Title",
+	"defaults": {
+		"open": "Open",
+		"close": "Close"
+	},
 	"toolbar": {
 		"title": "Meet Wellington!",
 		"links": {
@@ -22,6 +26,7 @@
 		"quote": "Working to make the internet a better place!"
 	},
 	"languages": {
+		"lang": "Language",
 		"ptBr": "Portuguese",
 		"en": "English"
 	}

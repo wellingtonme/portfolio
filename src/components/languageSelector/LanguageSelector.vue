@@ -1,5 +1,5 @@
 <template>
-
+  <!-- eslint-disable-next-line -->
   <v-select
     :items="languages"
     item-text="name"
@@ -8,7 +8,8 @@
     max-height="auto"
     autocomplete
     v-model="locale"
-    class="language--selector"
+    :class="{'hide-details': hideDetails, 'show-lable': showLable}"
+    :style="{ width: `${this.width}px` }"
   >
     <template 
       slot="selection" 
@@ -19,8 +20,8 @@
         :selected="data.selected"
         :key="JSON.stringify(data.item)"
       >
-
         <v-avatar-image :img-src="data.item.icon" />
+        <span v-if="showLable"> {{ $t(data.item.name) }} </span>
 
       </v-chip>
 
@@ -53,6 +54,21 @@ export default {
   components: {
     SelectorItem
   },
+  props: {
+    showLable: {
+      type: Boolean,
+      default: false
+    },
+    hideDetails: {
+      type: Boolean,
+      default: true
+    },
+    width: {
+      type: Number,
+      default: (80),
+      validator: v => !isNaN(parseInt(v)) 
+    }
+  },
 	data: () => ({
 		languages: [
 			{ name: 'languages.ptBr', iso: 'pt-BR', icon: './brazil_flag.png' },
@@ -75,5 +91,8 @@ export default {
 <style lang="stylus" scoped>
 .chip .avatar
   margin-right -11px
+
+.show-lable .chip .avatar
+  margin-right 8px !important
 
 </style>
