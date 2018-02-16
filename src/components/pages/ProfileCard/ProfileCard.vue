@@ -3,7 +3,8 @@
     <v-parallax height="400"/>
     <v-container 
       fluid
-      class="presentation-card">
+      class="presentation-card"
+      text-xs-center>
       <v-layout
         row
         wrap>
@@ -19,6 +20,7 @@
             <v-card-text>
               <profile-card-text/>
             </v-card-text>
+            <profile-card-actions />
           </v-card>
         </v-flex>
       </v-layout>
@@ -28,10 +30,13 @@
 
 <script>
 import ProfileCardText from './ProfileCardText.vue'
+import ProfileCardActions from './ProfileCardActions.vue'
+
 export default {
   name: "Presentation",
   components: {
-    ProfileCardText
+    ProfileCardText,
+    ProfileCardActions
   }
 };
 </script>
