@@ -5,11 +5,11 @@
     v-scroll="onScroll">
 
     <div class="ntoolbar--container">
-      <div class="ntoolbar--title-container">
+      <!-- <div class="ntoolbar--title-container">
         <h1 
           class="ntoolbar--title"
           :class="{'ntoolbar--title--scrolled': isScrolled}">{{ $t('toolbar.title') }}</h1>
-      </div>
+      </div> -->
 
       <div 
         class="ntoolbar--actions-container" 
@@ -20,7 +20,7 @@
           leave-active-class="animated fadeOut"
           mode="out-in">
 
-          <toolbar-action-list v-if="!isMobileView"/>
+          <toolbar-action-list v-if="!isMobileLandscapeView"/>
           <toolbar-action-icon 
             @openNavDrawer="openNavDrawer"
             v-else />          
@@ -37,6 +37,7 @@ import Colorable from 'vuetify/es5/mixins/colorable.js'
 import Themeable from 'vuetify/es5/mixins/themeable.js'
 import ToolbarActionList from './ToolbarActionList.vue'
 import ToolbarActionIcon from './ToolbarActionIcon.vue'
+import { helper } from '@/tools/componentsHelper.js'
 
 export default {
   name: 'Toolbar',
@@ -44,16 +45,13 @@ export default {
     ToolbarActionList,
     ToolbarActionIcon
   },
-	mixins: [Colorable, Themeable],
+	mixins: [Colorable, Themeable, helper],
 	data: () => ({
     offsetTop: 0
 	}),
 	computed: {
 		isScrolled: function () {
 			return this.offsetTop >= 100
-    },
-    isMobileView: function () {
-      return this.$mq.resize && this.$mq.below(600)
     }
 	},
 	methods: {

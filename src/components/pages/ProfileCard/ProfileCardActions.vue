@@ -1,5 +1,6 @@
 <template>
   <v-card-actions>
+    <v-spacer />
     <v-btn icon>
       <v-icon>fa-facebook-f</v-icon>
     </v-btn>

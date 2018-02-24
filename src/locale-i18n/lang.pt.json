@@ -18,7 +18,7 @@
 		"greeting": "OI",
 		"presentation": {
 			"prefix": "Eu sou",
-			"name": "<s>Goku</s> Wellington",
+			"name": "Wellington Silva",
 			"present": "@:profile.presentation.prefix @:profile.presentation.name"
 		},
 		"role": "Fullstack Developer",

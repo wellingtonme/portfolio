@@ -18,7 +18,7 @@
 		"greeting": "Hello there!",
 		"presentation": {
 			"prefix": "I'm",
-			"name": "Wellington",
+			"name": "Wellington Silva",
 			"present": "@:profile.presentation.prefix @:profile.presentation.name"
 		},
 		"role": "Fullstack Developer",
