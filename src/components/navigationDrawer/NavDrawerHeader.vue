@@ -11,7 +11,7 @@
       avatar
       tag="div">
       <v-list-tile-avatar>
-        <img src="https://randomuser.me/api/portraits/men/85.jpg" >
+        <img :src="getImage('./me.png')" >
       </v-list-tile-avatar>
       <v-list-tile-content>
         <v-list-tile-title>Wellington Silva</v-list-tile-title>
@@ -28,8 +28,11 @@
 </template>
 
 <script>
+import { helper } from '@/tools/componentsHelper.js'
+
 export default {
-	name: 'NavDrawerHeader',
+  name: 'NavDrawerHeader',
+  mixins: [helper],
 	data: () => ({
 		mini: false
 	}),
