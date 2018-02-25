@@ -2,7 +2,7 @@
   <section>
     <v-parallax 
       height="400" 
-      :src="getImage('./glass.png')" />
+      :src="getImage('./cover.png')" />
     <v-container 
       fluid
       class="presentation-card"
@@ -17,7 +17,9 @@
           lg8
           offset-sm1
           offset-lg2>
-          <v-card>
+          <v-card 
+            color="grey darken-4" 
+            class="grey--text text--lighten-1 elevation-3">
             <v-card-text>
               <profile-card-text/>
             </v-card-text>

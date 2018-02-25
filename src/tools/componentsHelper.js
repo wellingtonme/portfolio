@@ -18,4 +18,20 @@ const helper = {
 	}
 }
 
-export { helper }
+const scrollHelper = {
+	data: () => ({
+		offsetTop: 0
+	}),
+	computed: {
+		isScrolled: function () {
+			return this.offsetTop >= 100
+		}
+	},
+	methods: {
+		onScroll: function (e) {
+			this.offsetTop = window.pageYOffset || document.documentElement.scrollTop
+		}
+	}
+}
+
+export { helper, scrollHelper }

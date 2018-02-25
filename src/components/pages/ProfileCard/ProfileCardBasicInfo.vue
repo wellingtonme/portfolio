@@ -3,16 +3,18 @@
     <v-divider />
     <div>
       <card-text-row>
-        <span><v-icon>mail</v-icon> wellington.mesilva@gmail.com</span>
+        <span><v-icon color="grey lighten-1">mail</v-icon> wellington.mesilva@gmail.com</span>
       </card-text-row>
       <card-text-row>
-        <span><v-icon medium>fa-skype</v-icon> wellingtonmessias1</span>
+        <span><v-icon 
+          color="grey lighten-1" 
+          medium>fa-skype</v-icon> wellingtonmessias1</span>
       </card-text-row>
       <card-text-row>
-        <span><v-icon>phone</v-icon> +55 (35) 9 8439-9434</span>
+        <span><v-icon color="grey lighten-1">phone</v-icon> +55 (35) 9 8439-9434</span>
       </card-text-row>
       <card-text-row>
-        <span><v-icon>location_on</v-icon> Santa Rita do Sapucaí - Minas Gerais, Brazil</span>
+        <span><v-icon color="grey lighten-1">location_on</v-icon> Santa Rita do Sapucaí - Minas Gerais, Brazil</span>
       </card-text-row>
     </div>
     <v-divider />

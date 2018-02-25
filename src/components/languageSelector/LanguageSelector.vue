@@ -7,8 +7,9 @@
     chips
     max-height="auto"
     v-model="locale"
-    :class="{'hide-details': hideDetails, 'show-lable': showLable}"
+    :class="classes"
     :style="{ width: `${this.width}px` }"
+    v-scroll="onScroll"
   >
     <template 
       slot="selection" 
@@ -47,12 +48,14 @@
 <script>
 
 import SelectorItem from './SelectorItem.vue'
+import { scrollHelper } from '@/tools/componentsHelper.js'
 
 export default {
   name: 'LanguageSelector',
   components: {
     SelectorItem
   },
+  mixins: [scrollHelper],
   props: {
     showLable: {
       type: Boolean,
@@ -72,7 +75,7 @@ export default {
 		languages: [
 			{ name: 'languages.ptBr', iso: 'pt-BR', icon: './brazil_flag.png' },
 			{ name: 'languages.en', iso: 'en', icon: './usa_flag.png' }
-		]
+    ]
   }),
   computed: {
     locale: {
@@ -81,6 +84,14 @@ export default {
       },
       set: function (value) {
         this.$i18n.locale = value
+      }
+    },
+    classes: function () {
+      return {
+        'hide-details': this.hideDetails, 
+        'show-lable': this.showLable,
+        'fit-in-toolbar--scrolled': this.isScrolled,
+        'fit-in-toolbar': !this.isScrolled
       }
     }
   }
@@ -94,4 +105,10 @@ export default {
 .show-lable .chip .avatar
   margin-right 8px !important
 
+.fit-in-toolbar
+  padding-top: 14px
+  transition all .5s
+  &--scrolled
+    padding-top 8px
+    transition all .5s
 </style>
