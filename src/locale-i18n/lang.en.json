@@ -14,6 +14,11 @@
 			"contact": "Contact"
 		}
 	},
+	"languages": {
+		"lang": "Language",
+		"ptBr": "Portuguese",
+		"en": "English"
+	},
 	"profile": {
 		"greeting": "Hello there!",
 		"presentation": {
@@ -25,9 +30,9 @@
 		"description": "I'm a Web Fullstack Developer who loves VueJs and Node, passionate problem-solver, owner of 4 cats 🐾 and I like to watch videos of dressed dancing cats.",
 		"quote": "Working to make the internet a better place!"
 	},
-	"languages": {
-		"lang": "Language",
-		"ptBr": "Portuguese",
-		"en": "English"
+	"about": {
+		"text": "Hello there! I`m Wellington Silva. Web developer with over 5 years of experience specializing in fullstack development. Experienced with agile/scrum and great team worker. Having an in-depth knowledge including advanced HTML5, CSS3, STYLUS, JSON, XML, JavaScript, JQuery, VueJs, Angular Js, and also NodeJs with KoaJs and Express. Background in leadership and software architecture.",
+		"resume": "Download CV",
+		"contact": "Contact me"
 	}
 }

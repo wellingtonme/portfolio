@@ -9,10 +9,15 @@
 		"links": {
 			"home": "Home",
 			"about": "Sobre",
-			"skills": "Expertises",
+			"skills": "Conhecimentos",
 			"projects": "Projetos",
 			"contact": "Contato"
 		}
+	},
+	"languages": {
+		"lang": "Idioma",
+		"ptBr": "Português",
+		"en": "Inglês"
 	},
 	"profile": {
 		"greeting": "OI",
@@ -25,9 +30,9 @@
 		"description": "Sou um Web Developer apreciador de VueJS e Node, apaixonado em resolver problemas, dono de 4 cats 🐾 e eu gosto de assistir videos de gatinhos vestido dançando.",
 		"quote": "Trabalhando para fazer a internet um lugar melhor!"
 	},
-	"languages": {
-		"lang": "Idioma",
-		"ptBr": "Português",
-		"en": "Inglês"
+	"about": {
+		"text": "Ola! Me chamo Wellington Silva. Desenvolvedor Web com mais de 5 anos de experiência e especializando em desenvolvimento fullstack. Experiente com desenvolvimento agile/scrum e excelente team worker. Tenho profundo conhecimento em HTML5, CSS3, STYLUS, JSON, JavaScript, JQuery, VueJs, Angular Js e também NodeJs com KoaJs e Express. Experiência com liderança e arquitetura de software",
+		"resume": "Baixar CV",
+		"contact": "Emtre em contato"
 	}
 }

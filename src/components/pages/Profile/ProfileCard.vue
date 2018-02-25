@@ -19,7 +19,7 @@
           offset-lg2>
           <v-card 
             color="grey darken-4" 
-            class="grey--text text--lighten-1 elevation-3">
+            class="grey--text text--lighten-1">
             <v-card-text>
               <profile-card-text/>
             </v-card-text>

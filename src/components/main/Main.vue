@@ -6,6 +6,7 @@
 
     <v-content>
       <profile-card />
+      <about-card />
     </v-content>
   </v-app>
 </template>
@@ -13,14 +14,16 @@
 <script>
 import Toolbar from '../toolbar/Toolbar.vue'
 import NavDrawer from '../navigationDrawer/NavDrawer.vue'
-import ProfileCard from '../pages/profileCard/ProfileCard.vue'
+import ProfileCard from '../pages/profile/ProfileCard.vue'
+import AboutCard from '../pages/about/AboutCard.vue'
 
 export default {
 	name: 'Main',
 	components: {
     Toolbar,
     NavDrawer,
-    ProfileCard
+    ProfileCard,
+    AboutCard
 	},
   methods: {
     openNavDrawer () {
