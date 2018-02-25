@@ -27,8 +27,5 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.list_tile--container
-	padding 0
-	& > .avatar
-		margin-right 10px 
+@import '../../stylus/components/languageSelector/languageSelectorItem.styl'
 </style>

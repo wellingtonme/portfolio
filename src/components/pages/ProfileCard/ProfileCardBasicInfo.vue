@@ -33,5 +33,5 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import '../../../stylus/components/profileCardBasicInfo.styl'
+@import '../../../stylus/components/profileCard/profileCardBasicInfo.styl'
 </style>

@@ -50,5 +50,5 @@ export default {
 </script>
 
 <style scopped lang="stylus">
-@import ('../../stylus/components/toolbar.styl')
+@import ('../../stylus/components/toolbar/toolbar.styl')
 </style>

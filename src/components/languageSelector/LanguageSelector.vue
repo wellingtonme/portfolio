@@ -99,16 +99,5 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.chip .avatar
-  margin-right -11px
-
-.show-lable .chip .avatar
-  margin-right 8px !important
-
-.fit-in-toolbar
-  padding-top: 14px
-  transition all .5s
-  &--scrolled
-    padding-top 8px
-    transition all .5s
+@import '../../stylus/components/languageSelector/languageSelector.styl'
 </style>

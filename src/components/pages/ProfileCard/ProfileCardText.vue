@@ -47,5 +47,5 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-	@import '../../../stylus/components/profileCardText.styl'
+	@import '../../../stylus/components/profileCard/profileCardText.styl'
 </style>

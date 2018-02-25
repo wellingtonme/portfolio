@@ -34,13 +34,5 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.profile--avatar
-  @media(min-width: 960)
-    margin-top: 20px
-
-.float-avatar
-  position absolute
-  width 100%
-  left 0
-  bottom 85%
+@import '../../../stylus/components/profileCard/profileCardAvatar.styl'
 </style>
