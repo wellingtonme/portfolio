@@ -8,15 +8,12 @@ import Vue from 'vue'
 import App from './App'
 import Frameworks from './frameworks'
 
-import VAvatarImage from './components/wrapers/VAvatarImage.vue'
-
 Vue.config.productionTip = false
+
+Frameworks.RegisterComponents(Vue)
 
 const i18n = Frameworks.i18n
 const store = Frameworks.Store
-
-//components
-Vue.component('VAvatarImage', VAvatarImage)
 
 /* eslint-disable no-new */
 new Vue({

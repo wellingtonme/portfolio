@@ -1,34 +1,22 @@
 <template>
-  <section>
+  <v-section 
+    text-md-left
+    class="presentation-card"
+    container-class="text-md-left">
     <v-parallax 
       height="400" 
       :src="getImage('./cover.png')" />
-    <v-container 
-      fluid
-      class="presentation-card"
-      text-xs-center
-      text-md-left>
-      <v-layout
-        row
-        wrap>
-        <v-flex 
-          xs12
-          sm10
-          lg8
-          offset-sm1
-          offset-lg2>
-          <v-card 
-            color="grey darken-4" 
-            class="grey--text text--lighten-1">
-            <v-card-text>
-              <profile-card-text/>
-            </v-card-text>
-            <profile-card-actions />
-          </v-card>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </section>
+    <v-flex-row>
+      <v-card 
+        color="grey darken-4" 
+        class="grey--text text--lighten-1">
+        <v-card-text>
+          <profile-card-text/>
+        </v-card-text>
+        <profile-card-actions />
+      </v-card>
+    </v-flex-row>
+  </v-section>
 </template>
 
 <script>
