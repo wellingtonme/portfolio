@@ -32,7 +32,7 @@ import Colorable from 'vuetify/es5/mixins/colorable.js'
 import Themeable from 'vuetify/es5/mixins/themeable.js'
 import ToolbarActionList from './ToolbarActionList.vue'
 import ToolbarActionIcon from './ToolbarActionIcon.vue'
-import { helper, scrollHelper } from '@/tools/componentsHelper.js'
+import { viewHelper, scrollHelper } from '@/tools/componentsHelper.js'
 
 export default {
   name: 'Toolbar',
@@ -40,7 +40,7 @@ export default {
     ToolbarActionList,
     ToolbarActionIcon
   },
-	mixins: [Colorable, Themeable, helper, scrollHelper],
+	mixins: [Colorable, Themeable, viewHelper, scrollHelper],
 	methods: {
     openNavDrawer () {
       this.$emit('openNavDrawer')

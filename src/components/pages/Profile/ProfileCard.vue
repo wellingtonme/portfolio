@@ -22,7 +22,7 @@
 <script>
 import ProfileCardText from './ProfileCardText.vue'
 import ProfileCardActions from './ProfileCardActions.vue'
-import { helper } from '@/tools/componentsHelper.js'
+import { imageHelper } from '@/tools/componentsHelper.js'
 
 export default {
   name: "Presentation",
@@ -30,7 +30,7 @@ export default {
     ProfileCardText,
     ProfileCardActions
   },
-  mixins: [helper]
+  mixins: [imageHelper]
 };
 </script>
 

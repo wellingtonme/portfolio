@@ -5,11 +5,11 @@
 </template>
 
 <script>
-import { helper } from '@/tools/componentsHelper'
+import { imageHelper } from '@/tools/componentsHelper'
 
 export default {
   name: 'VAvatarImage',
-  mixins: [ helper ],
+  mixins: [ imageHelper ],
   props: {
     imgSrc: {
       type: String,

@@ -1,10 +1,13 @@
-const helper = {
+const imageHelper = {
 	methods: {
 		getImage (img) {
 			let images = require.context('@/assets/', false, /\.png$/)
 			return images(img)
 		}
-	},
+	}
+}
+
+const viewHelper = {
 	computed: {
 		isMobileView: function () {
 			return this.$mq.resize && this.$mq.below(600)
@@ -34,4 +37,4 @@ const scrollHelper = {
 	}
 }
 
-export { helper, scrollHelper }
+export { imageHelper, viewHelper, scrollHelper }

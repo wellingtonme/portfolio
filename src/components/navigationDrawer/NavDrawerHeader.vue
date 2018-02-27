@@ -28,11 +28,11 @@
 </template>
 
 <script>
-import { helper } from '@/tools/componentsHelper.js'
+import { imageHelper } from '@/tools/componentsHelper.js'
 
 export default {
   name: 'NavDrawerHeader',
-  mixins: [helper],
+  mixins: [imageHelper],
 	data: () => ({
 		mini: false
 	}),

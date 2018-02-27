@@ -4,6 +4,10 @@
       fluid
       text-xs-center
       :class="containerClass">
+      <h1 v-if="title">
+        <v-icon>{{ titleIcon }} </v-icon>
+        {{ $t(title) }}
+      </h1>
       <v-layout
         row
         wrap>
@@ -14,6 +18,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'VSection',
   props: {
@@ -24,6 +29,14 @@ export default {
     layoutClass: {
       type: String,
       default: ('')
+    },
+    title: {
+      type: String,
+      default: (null)
+    },
+    titleIcon: {
+      type: String,
+      default: ('mdi-check-all')
     }
   }
 }

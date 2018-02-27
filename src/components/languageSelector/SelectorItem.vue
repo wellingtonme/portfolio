@@ -8,11 +8,11 @@
 </template>
 
 <script>
-import { helper } from '@/tools/componentsHelper'
+import { imageHelper } from '@/tools/componentsHelper'
 
 export default {
 	name: 'SelectorItem',
-	mixins: [helper],
+	mixins: [imageHelper],
 	props: {
 		icon: {
 			type: String,

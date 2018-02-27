@@ -34,5 +34,19 @@
 		"text": "Hello there! I`m Wellington Silva. Web developer with over 5 years of experience specializing in fullstack development. Experienced with agile/scrum and great team worker. Having an in-depth knowledge including advanced HTML5, CSS3, STYLUS, JSON, XML, JavaScript, JQuery, VueJs, Angular Js, and also NodeJs with KoaJs and Express. Background in leadership and software architecture.",
 		"resume": "Download CV",
 		"contact": "Contact me"
+	},
+	"skills": {
+		"title": "Skills",
+		"pro": "Professional Skills",
+		"additional": "Additional Skills",
+		"english": "English",
+		"teamWork": "Team Work",
+		"creativity": "Creativity",
+		"uiUx": "UI/UX",
+		"digitalArt": "Digital Art",
+		"photoshop": "Photoshop",
+		"adobeXD": "Adobe XD",
+		"scrum": "Scrum",
+		"mobile": "Mobile Design"
 	}
 }

@@ -7,6 +7,7 @@
     <v-content>
       <profile-card />
       <about-card />
+      <skills-card />
     </v-content>
   </v-app>
 </template>
@@ -16,6 +17,7 @@ import Toolbar from '../toolbar/Toolbar.vue'
 import NavDrawer from '../navigationDrawer/NavDrawer.vue'
 import ProfileCard from '../pages/profile/ProfileCard.vue'
 import AboutCard from '../pages/about/AboutCard.vue'
+import SkillsCard from '../pages/skills/SkillsCard.vue'
 
 export default {
 	name: 'Main',
@@ -23,7 +25,8 @@ export default {
     Toolbar,
     NavDrawer,
     ProfileCard,
-    AboutCard
+    AboutCard,
+    SkillsCard
 	},
   methods: {
     openNavDrawer () {

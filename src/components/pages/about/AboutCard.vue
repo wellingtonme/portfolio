@@ -8,22 +8,7 @@
         <v-card-text>
           {{ $t('about.text') }}
         </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn 
-            color="primary"
-            depressed>
-            <v-icon>file_download</v-icon> 
-            {{ $t('about.resume') }}
-          </v-btn>
-          <v-btn
-            color="primary"
-            depressed>
-            <v-icon>send</v-icon>
-            {{ $t('about.contact') }}
-          </v-btn>
-          <v-spacer />
-        </v-card-actions>
+        <about-card-actions />
       </v-card>
 
     </v-flex-row>
@@ -31,8 +16,11 @@
 </template>
 
 <script>
+import AboutCardActions from './AboutCardActions.vue'
+
 export default {
-  name: "AboutCard"
+  name: 'AboutCard',
+  components: { AboutCardActions }
 };
 </script>
 

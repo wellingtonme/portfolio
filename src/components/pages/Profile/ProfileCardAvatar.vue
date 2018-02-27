@@ -20,11 +20,11 @@
 </template>
 
 <script>
-import { helper } from "@/tools/componentsHelper.js"
+import { viewHelper } from "@/tools/componentsHelper.js"
 
 export default {
   name: "ProfileCardAvatar",
-  mixins: [helper],
+  mixins: [viewHelper],
   computed: {
     avatarSize: function() {
       return this.isMobileView ? 150 : this.isMobileLandscapeView ? 170 : 260;

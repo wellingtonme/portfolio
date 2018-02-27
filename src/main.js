@@ -2,7 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import './stylus/main.styl'
 import 'animate.css'
-import 'font-awesome/css/font-awesome.css'
+import 'font-awesome/css/font-awesome.min.css'
+import 'mdi/css/materialdesignicons.min.css'
 
 import Vue from 'vue'
 import App from './App'

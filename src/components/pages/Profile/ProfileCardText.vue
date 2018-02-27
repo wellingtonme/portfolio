@@ -33,7 +33,7 @@
 import CardTextRow from "./CardTextRow.vue"
 import ProfileCardBasicInfo from './ProfileCardBasicInfo.vue'
 import ProfileCardAvatar from './ProfileCardAvatar.vue'
-import { helper } from "@/tools/componentsHelper.js"
+import { viewHelper } from "@/tools/componentsHelper.js"
 
 export default {
 	name: 'ProfileCardText',
@@ -42,7 +42,7 @@ export default {
     ProfileCardBasicInfo,
     ProfileCardAvatar
   },
-  mixins: [helper]
+  mixins: [viewHelper]
 }
 </script>
 
