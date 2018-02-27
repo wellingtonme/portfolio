@@ -6,14 +6,29 @@
     offset-md1
     offset-lg2>
     <v-card color="primary">
-      <v-card-text>Skills</v-card-text>
+      <v-card-text>
+        <v-layout 
+          row
+          wrap>
+          <v-flex xs12>
+            <skill-rate-linear
+              :rate="80" 
+              :interval-time="400"/>
+          </v-flex>
+        </v-layout>
+      </v-card-text>
     </v-card>
   </v-flex>
 </template>
 
 <script>
+import SkillRateLinear from './SkillRateLinear.vue'
+
 export default {
-  name: 'ProSkillsCard'
+  name: 'ProSkillsCard',
+  components: {
+    SkillRateLinear
+  },
 }
 </script>
 
