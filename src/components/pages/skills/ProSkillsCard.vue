@@ -12,6 +12,7 @@
           wrap>
           <v-flex xs12>
             <skill-rate-linear
+              style="float:right"
               :rate="80" 
               :interval-time="400"/>
           </v-flex>

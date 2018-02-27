@@ -1,8 +1,11 @@
 <template>
-  <v-progress-linear 
-    :height="height"
-    v-model="value"
-    color="grey darken-4"/>
+  <div style="width:100%">
+    <span style="float:left">HTML</span> <!-- change to property -->
+    <v-progress-linear 
+      :height="height"
+      v-model="value"
+      color="grey darken-4"/>
+  </div>
 </template>
 
 <script>
