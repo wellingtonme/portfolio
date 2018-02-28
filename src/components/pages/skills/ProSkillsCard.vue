@@ -14,7 +14,8 @@
             <skill-rate-linear
               style="float:right"
               :rate="80" 
-              :interval-time="400"/>
+              :label="'HTML'"
+              :interval-time="200"/>
           </v-flex>
         </v-layout>
       </v-card-text>

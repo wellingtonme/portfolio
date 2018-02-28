@@ -1,6 +1,15 @@
 <template>
   <div style="width:100%">
-    <span style="float:left">HTML</span> <!-- change to property -->
+    <span 
+      v-if="title" 
+      style="float:left">
+      {{ title }}
+    </span>
+    <span 
+      v-if="rate" 
+      style="float:right">
+      {{ rate }} %
+    </span>
     <v-progress-linear 
       :height="height"
       v-model="value"
@@ -26,12 +35,26 @@ export default {
       type: Number,
       validator: v => !isNaN(v),
       default: (1000)
+    },
+    label: {
+      type: String,
+      default: (null)
+    },
+    translate: {
+      type: Boolean,
+      default: (false)
     }
   },
   data: () => ({
     interval: {},
     value: 0
   }),
+  computed: {
+    title: function () {
+      debugger
+      return this.translate && this.label ? this.$i18n.t(this.label) : this.label
+    }
+  },
   beforeDestroy () {
     clearInterval(this.interval)
   },
