@@ -63,7 +63,7 @@ export default {
       if (this.value === this.rate) {
         clearInterval(this.interval)
       } else {
-        this.value += 10
+        this.value += 5
       }      
     }, this.intervalTime)
   }

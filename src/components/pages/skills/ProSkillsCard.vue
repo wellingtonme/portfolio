@@ -12,10 +12,33 @@
           wrap>
           <v-flex xs12>
             <skill-rate-linear
-              style="float:right"
               :rate="80" 
-              :label="'HTML'"
-              :interval-time="200"/>
+              :label="'HTML/CSS'"
+              :interval-time="100"/>
+          </v-flex>
+          <v-flex xs12>
+            <skill-rate-linear
+              :rate="90" 
+              :label="'JavaScript'"
+              :interval-time="100"/>
+          </v-flex>
+          <v-flex xs12>
+            <skill-rate-linear
+              :rate="75" 
+              :label="'Stylus Lang'"
+              :interval-time="100"/>
+          </v-flex>
+          <v-flex xs12>
+            <skill-rate-linear
+              :rate="65" 
+              :label="'VueJs'"
+              :interval-time="100"/>
+          </v-flex>
+          <v-flex xs12>
+            <skill-rate-linear
+              :rate="85" 
+              :label="'Express/KoaJs'"
+              :interval-time="100"/>
           </v-flex>
         </v-layout>
       </v-card-text>
