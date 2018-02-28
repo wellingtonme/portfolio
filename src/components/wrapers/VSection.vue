@@ -4,8 +4,10 @@
       fluid
       text-xs-center
       :class="containerClass">
-      <h1 v-if="title">
-        <v-icon>{{ titleIcon }} </v-icon>
+      <h1 
+        v-if="title" 
+        class="sectionTitle grey--text text--lighten-1">
+        <v-icon color="grey lighten-1">{{ titleIcon }} </v-icon>
         {{ $t(title) }}
       </h1>
       <v-layout
@@ -42,6 +44,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="stylus" scoped>
+.sectionTitle
+  padding-bottom 15px
 </style>

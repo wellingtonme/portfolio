@@ -18,17 +18,8 @@
 </template>
 
 <script>
-import skillRateHelper from './skillRateHelper.js'
 export default {
-  name: 'SkillRateLinear',
-  mixins: [skillRateHelper],
-  props: {
-    height: {
-      type: Number,
-      validator: v => !isNaN(v),
-      default: (15)
-    }, 
-  }  
+  name: 'SkillRateCircle'
 }
 </script>
 
