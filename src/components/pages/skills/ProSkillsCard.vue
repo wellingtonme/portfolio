@@ -12,33 +12,11 @@
           wrap>
           <v-flex xs12>
             <skill-rate-linear
-              :rate="80" 
-              :label="'HTML/CSS'"
-              :interval-time="100"/>
-          </v-flex>
-          <v-flex xs12>
-            <skill-rate-linear
-              :rate="90" 
-              :label="'JavaScript'"
-              :interval-time="100"/>
-          </v-flex>
-          <v-flex xs12>
-            <skill-rate-linear
-              :rate="75" 
-              :label="'Stylus Lang'"
-              :interval-time="100"/>
-          </v-flex>
-          <v-flex xs12>
-            <skill-rate-linear
-              :rate="65" 
-              :label="'VueJs'"
-              :interval-time="100"/>
-          </v-flex>
-          <v-flex xs12>
-            <skill-rate-linear
-              :rate="85" 
-              :label="'Express/KoaJs'"
-              :interval-time="100"/>
+              v-for="skill in skills"
+              :key="JSON.stringify(skill)"
+              :rate="skill.rate" 
+              :label="skill.title"
+              :interval-time="skill.interval"/>
           </v-flex>
         </v-layout>
       </v-card-text>
@@ -54,6 +32,15 @@ export default {
   components: {
     SkillRateLinear
   },
+  data: () => ({
+    skills: [
+      { rate: 80, title: 'HTML/CSS', interval: 100 },
+      { rate: 90, title: 'JavaScript', interval: 100 },
+      { rate: 75, title: 'Stylus Lang', interval: 100 },
+      { rate: 70, title: 'VueJs', interval: 100 },
+      { rate: 85, title: 'Express/KoaJs', interval: 100 }
+    ]
+  })
 }
 </script>
 
